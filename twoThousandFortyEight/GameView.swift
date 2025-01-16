@@ -65,10 +65,6 @@ struct GameView: View {
                     .padding(20)
                 Spacer()
                 
-//                Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
-//                    showAlertRecord = true
-//                }
-                
                 Button(action: {
                     withAnimation(.easeInOut) {
                         viewModel.newGame()

@@ -22,7 +22,7 @@ struct TileView: View {
             .frame(width: tileSize, height: tileSize)
             .overlay(
                 Text(tile.value > 0 ? "\(tile.value)" : "")
-                    .font(.largeTitle)
+                    .font(tile.value > 999 ? .title2 : .title)
                     .foregroundColor(tile.value > 4 ? .white : .black)
             )
             .position(tilePosition)
